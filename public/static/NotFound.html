@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+        <title>F7F - Not Found</title>
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="/assets/favicons/favicon.ico"
+        />
+        <script src="/static/NotFound.min.js"></script>
+    </head>
+    <body>
+        <div id="myapp"></div>
+        <script>
+            var app = Elm.NotFound.init({
+                node: document.getElementById("myapp"),
+                flags: {
+                    width: window.innerWidth,
+                    height: window.innerHeight,
+                },
+            });
+        </script>
+    </body>
+</html>

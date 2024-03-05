@@ -1,0 +1,3 @@
+using elm-ui and the uploaded files make me a navbar widget that is contained to it's own file, the nabber widget takes the path of an image which is used as a image link to go to a specified url, and it takes a list of other names and their respective url links.
+
+The image link should be on the left of the nabber the other links should hug the right, everything should be spaced nicely and look good

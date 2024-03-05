@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+        <title>F7F - Login</title>
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="/assets/favicons/favicon.ico"
+        />
+        <script src="/static/Login.min.js"></script>
+    </head>
+    <body>
+        <div id="myapp"></div>
+        <script>
+            var app = Elm.Login.init({
+                node: document.getElementById("myapp"),
+                flags: {},
+            });
+
+            app.ports.redirectToUrl.subscribe(function (url) {
+                window.location.href = url;
+            });
+        </script>
+    </body>
+</html>
